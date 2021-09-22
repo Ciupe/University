@@ -1,0 +1,77 @@
+Program state
+ID: 1 
+Execution Stack: a = 25; int b; b = 14; If (a >= b) then {Print (true)} else {Print (false)} int a  
+Symbol Table:  
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 1 
+Execution Stack: a = 25; int b; b = 14; If (a >= b) then {Print (true)} else {Print (false)}  
+Symbol Table: a --> 0 
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 1 
+Execution Stack: int b; b = 14; If (a >= b) then {Print (true)} else {Print (false)} a = 25  
+Symbol Table: a --> 0 
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 1 
+Execution Stack: int b; b = 14; If (a >= b) then {Print (true)} else {Print (false)}  
+Symbol Table: a --> 25 
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 1 
+Execution Stack: b = 14; If (a >= b) then {Print (true)} else {Print (false)} int b  
+Symbol Table: a --> 25 
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 1 
+Execution Stack: b = 14; If (a >= b) then {Print (true)} else {Print (false)}  
+Symbol Table: a --> 25
+b --> 0 
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 1 
+Execution Stack: If (a >= b) then {Print (true)} else {Print (false)} b = 14  
+Symbol Table: a --> 25
+b --> 0 
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 1 
+Execution Stack: If (a >= b) then {Print (true)} else {Print (false)}  
+Symbol Table: a --> 25
+b --> 14 
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 1 
+Execution Stack:  
+Symbol Table: a --> 25
+b --> 14 
+Heap:  
+Output Console: true
+ 
+File Table:  
+

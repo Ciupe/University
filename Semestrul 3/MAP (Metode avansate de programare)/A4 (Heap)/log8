@@ -1,0 +1,175 @@
+Execution Stack: Ref(int) v; new(v, 20); Ref(Ref(int)) a; new(a, v); new(v, 30); Print (rH(rH(a))) 
+SymbolTable:
+
+Output:
+
+
+
+Execution Stack: new(v, 20); Ref(Ref(int)) a; new(a, v); new(v, 30); Print (rH(rH(a))) Ref(int) v 
+SymbolTable:
+
+Output:
+
+
+
+Execution Stack: new(v, 20); Ref(Ref(int)) a; new(a, v); new(v, 30); Print (rH(rH(a))) Ref(int) v 
+SymbolTable:
+
+Output:
+
+
+
+Execution Stack: new(v, 20); Ref(Ref(int)) a; new(a, v); new(v, 30); Print (rH(rH(a))) 
+SymbolTable:
+v --> (0, int)
+Output:
+
+
+
+Execution Stack: new(v, 20); Ref(Ref(int)) a; new(a, v); new(v, 30); Print (rH(rH(a))) 
+SymbolTable:
+v --> (0, int)
+Output:
+
+
+
+Execution Stack: Ref(Ref(int)) a; new(a, v); new(v, 30); Print (rH(rH(a))) new(v, 20) 
+SymbolTable:
+v --> (0, int)
+Output:
+
+
+
+Execution Stack: Ref(Ref(int)) a; new(a, v); new(v, 30); Print (rH(rH(a))) new(v, 20) 
+SymbolTable:
+v --> (0, int)
+Output:
+
+
+
+Execution Stack: Ref(Ref(int)) a; new(a, v); new(v, 30); Print (rH(rH(a))) 
+SymbolTable:
+v --> (1, int)
+Output:
+
+
+
+Execution Stack: Ref(Ref(int)) a; new(a, v); new(v, 30); Print (rH(rH(a))) 
+SymbolTable:
+v --> (1, int)
+Output:
+
+
+
+Execution Stack: new(a, v); new(v, 30); Print (rH(rH(a))) Ref(Ref(int)) a 
+SymbolTable:
+v --> (1, int)
+Output:
+
+
+
+Execution Stack: new(a, v); new(v, 30); Print (rH(rH(a))) Ref(Ref(int)) a 
+SymbolTable:
+v --> (1, int)
+Output:
+
+
+
+Execution Stack: new(a, v); new(v, 30); Print (rH(rH(a))) 
+SymbolTable:
+a --> (0, Ref(int))
+v --> (1, int)
+Output:
+
+
+
+Execution Stack: new(a, v); new(v, 30); Print (rH(rH(a))) 
+SymbolTable:
+a --> (0, Ref(int))
+v --> (1, int)
+Output:
+
+
+
+Execution Stack: new(v, 30); Print (rH(rH(a))) new(a, v) 
+SymbolTable:
+a --> (0, Ref(int))
+v --> (1, int)
+Output:
+
+
+
+Execution Stack: new(v, 30); Print (rH(rH(a))) new(a, v) 
+SymbolTable:
+a --> (0, Ref(int))
+v --> (1, int)
+Output:
+
+
+
+Execution Stack: new(v, 30); Print (rH(rH(a))) 
+SymbolTable:
+a --> (2, Ref(int))
+v --> (1, int)
+Output:
+
+
+
+Execution Stack: new(v, 30); Print (rH(rH(a))) 
+SymbolTable:
+a --> (2, Ref(int))
+v --> (1, int)
+Output:
+
+
+
+Execution Stack: Print (rH(rH(a))) new(v, 30) 
+SymbolTable:
+a --> (2, Ref(int))
+v --> (1, int)
+Output:
+
+
+
+Execution Stack: Print (rH(rH(a))) new(v, 30) 
+SymbolTable:
+a --> (2, Ref(int))
+v --> (1, int)
+Output:
+
+
+
+Execution Stack: Print (rH(rH(a))) 
+SymbolTable:
+a --> (2, Ref(int))
+v --> (3, int)
+Output:
+
+
+
+Execution Stack: Print (rH(rH(a))) 
+SymbolTable:
+a --> (2, Ref(int))
+v --> (3, int)
+Output:
+
+
+
+Execution Stack: 
+SymbolTable:
+a --> (2, Ref(int))
+v --> (3, int)
+Output:
+20
+
+
+
+Execution Stack: 
+SymbolTable:
+a --> (2, Ref(int))
+v --> (3, int)
+Output:
+20
+
+
+

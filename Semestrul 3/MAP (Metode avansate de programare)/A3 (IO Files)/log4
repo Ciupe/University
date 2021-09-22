@@ -1,0 +1,137 @@
+Execution Stack: fileName = test.in; Open(fileName); int x; Read (fileName, x); Print (x); Read (fileName, x); Print (x); Close(fileName) string fileName 
+SymbolTable:
+
+Output:
+
+
+
+Execution Stack: fileName = test.in; Open(fileName); int x; Read (fileName, x); Print (x); Read (fileName, x); Print (x); Close(fileName) 
+SymbolTable:
+fileName --> 
+Output:
+
+
+
+Execution Stack: Open(fileName); int x; Read (fileName, x); Print (x); Read (fileName, x); Print (x); Close(fileName) fileName = test.in 
+SymbolTable:
+fileName --> 
+Output:
+
+
+
+Execution Stack: Open(fileName); int x; Read (fileName, x); Print (x); Read (fileName, x); Print (x); Close(fileName) 
+SymbolTable:
+fileName --> test.in
+Output:
+
+
+
+Execution Stack: int x; Read (fileName, x); Print (x); Read (fileName, x); Print (x); Close(fileName) Open(fileName) 
+SymbolTable:
+fileName --> test.in
+Output:
+
+
+
+Execution Stack: int x; Read (fileName, x); Print (x); Read (fileName, x); Print (x); Close(fileName) 
+SymbolTable:
+fileName --> test.in
+Output:
+
+
+
+Execution Stack: Read (fileName, x); Print (x); Read (fileName, x); Print (x); Close(fileName) int x 
+SymbolTable:
+fileName --> test.in
+Output:
+
+
+
+Execution Stack: Read (fileName, x); Print (x); Read (fileName, x); Print (x); Close(fileName) 
+SymbolTable:
+fileName --> test.in
+x --> 0
+Output:
+
+
+
+Execution Stack: Print (x); Read (fileName, x); Print (x); Close(fileName) Read (fileName, x) 
+SymbolTable:
+fileName --> test.in
+x --> 0
+Output:
+
+
+
+Execution Stack: Print (x); Read (fileName, x); Print (x); Close(fileName) 
+SymbolTable:
+fileName --> test.in
+x --> 15
+Output:
+
+
+
+Execution Stack: Read (fileName, x); Print (x); Close(fileName) Print (x) 
+SymbolTable:
+fileName --> test.in
+x --> 15
+Output:
+
+
+
+Execution Stack: Read (fileName, x); Print (x); Close(fileName) 
+SymbolTable:
+fileName --> test.in
+x --> 15
+Output:
+15
+
+
+
+Execution Stack: Print (x); Close(fileName) Read (fileName, x) 
+SymbolTable:
+fileName --> test.in
+x --> 15
+Output:
+15
+
+
+
+Execution Stack: Print (x); Close(fileName) 
+SymbolTable:
+fileName --> test.in
+x --> 50
+Output:
+15
+
+
+
+Execution Stack: Close(fileName) Print (x) 
+SymbolTable:
+fileName --> test.in
+x --> 50
+Output:
+15
+
+
+
+Execution Stack: Close(fileName) 
+SymbolTable:
+fileName --> test.in
+x --> 50
+Output:
+15
+50
+
+
+
+Execution Stack: 
+SymbolTable:
+fileName --> test.in
+x --> 50
+Output:
+15
+50
+
+
+

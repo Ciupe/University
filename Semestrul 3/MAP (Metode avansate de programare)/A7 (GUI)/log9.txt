@@ -1,0 +1,228 @@
+Program state
+ID: 1 
+Execution Stack: Ref(int) b; int v; new(a, 0); new(b, 0); wH(a,1); wH(b,2); v=rH(a) < rH(b)?100:200; Print (v); v=rH(b) - 2 > rH(a)?100:200; Print (v) Ref(int) a  
+Symbol Table:  
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 1 
+Execution Stack: Ref(int) b; int v; new(a, 0); new(b, 0); wH(a,1); wH(b,2); v=rH(a) < rH(b)?100:200; Print (v); v=rH(b) - 2 > rH(a)?100:200; Print (v)  
+Symbol Table: a --> (0, int) 
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 1 
+Execution Stack: int v; new(a, 0); new(b, 0); wH(a,1); wH(b,2); v=rH(a) < rH(b)?100:200; Print (v); v=rH(b) - 2 > rH(a)?100:200; Print (v) Ref(int) b  
+Symbol Table: a --> (0, int) 
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 1 
+Execution Stack: int v; new(a, 0); new(b, 0); wH(a,1); wH(b,2); v=rH(a) < rH(b)?100:200; Print (v); v=rH(b) - 2 > rH(a)?100:200; Print (v)  
+Symbol Table: a --> (0, int)
+b --> (0, int) 
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 1 
+Execution Stack: new(a, 0); new(b, 0); wH(a,1); wH(b,2); v=rH(a) < rH(b)?100:200; Print (v); v=rH(b) - 2 > rH(a)?100:200; Print (v) int v  
+Symbol Table: a --> (0, int)
+b --> (0, int) 
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 1 
+Execution Stack: new(a, 0); new(b, 0); wH(a,1); wH(b,2); v=rH(a) < rH(b)?100:200; Print (v); v=rH(b) - 2 > rH(a)?100:200; Print (v)  
+Symbol Table: a --> (0, int)
+b --> (0, int)
+v --> 0 
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 1 
+Execution Stack: new(b, 0); wH(a,1); wH(b,2); v=rH(a) < rH(b)?100:200; Print (v); v=rH(b) - 2 > rH(a)?100:200; Print (v) new(a, 0)  
+Symbol Table: a --> (0, int)
+b --> (0, int)
+v --> 0 
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 1 
+Execution Stack: new(b, 0); wH(a,1); wH(b,2); v=rH(a) < rH(b)?100:200; Print (v); v=rH(b) - 2 > rH(a)?100:200; Print (v)  
+Symbol Table: a --> (1, int)
+b --> (0, int)
+v --> 0 
+Heap: (1 -> 0)  
+Output Console:  
+File Table:  
+
+Program state
+ID: 1 
+Execution Stack: wH(a,1); wH(b,2); v=rH(a) < rH(b)?100:200; Print (v); v=rH(b) - 2 > rH(a)?100:200; Print (v) new(b, 0)  
+Symbol Table: a --> (1, int)
+b --> (0, int)
+v --> 0 
+Heap: (1 -> 0)  
+Output Console:  
+File Table:  
+
+Program state
+ID: 1 
+Execution Stack: wH(a,1); wH(b,2); v=rH(a) < rH(b)?100:200; Print (v); v=rH(b) - 2 > rH(a)?100:200; Print (v)  
+Symbol Table: a --> (1, int)
+b --> (2, int)
+v --> 0 
+Heap: (1 -> 0) (2 -> 0)  
+Output Console:  
+File Table:  
+
+Program state
+ID: 1 
+Execution Stack: wH(b,2); v=rH(a) < rH(b)?100:200; Print (v); v=rH(b) - 2 > rH(a)?100:200; Print (v) wH(a,1)  
+Symbol Table: a --> (1, int)
+b --> (2, int)
+v --> 0 
+Heap: (1 -> 0) (2 -> 0)  
+Output Console:  
+File Table:  
+
+Program state
+ID: 1 
+Execution Stack: wH(b,2); v=rH(a) < rH(b)?100:200; Print (v); v=rH(b) - 2 > rH(a)?100:200; Print (v)  
+Symbol Table: a --> (1, int)
+b --> (2, int)
+v --> 0 
+Heap: (1 -> 1) (2 -> 0)  
+Output Console:  
+File Table:  
+
+Program state
+ID: 1 
+Execution Stack: v=rH(a) < rH(b)?100:200; Print (v); v=rH(b) - 2 > rH(a)?100:200; Print (v) wH(b,2)  
+Symbol Table: a --> (1, int)
+b --> (2, int)
+v --> 0 
+Heap: (1 -> 1) (2 -> 0)  
+Output Console:  
+File Table:  
+
+Program state
+ID: 1 
+Execution Stack: v=rH(a) < rH(b)?100:200; Print (v); v=rH(b) - 2 > rH(a)?100:200; Print (v)  
+Symbol Table: a --> (1, int)
+b --> (2, int)
+v --> 0 
+Heap: (1 -> 1) (2 -> 2)  
+Output Console:  
+File Table:  
+
+Program state
+ID: 1 
+Execution Stack: Print (v); v=rH(b) - 2 > rH(a)?100:200; Print (v) v=rH(a) < rH(b)?100:200  
+Symbol Table: a --> (1, int)
+b --> (2, int)
+v --> 0 
+Heap: (1 -> 1) (2 -> 2)  
+Output Console:  
+File Table:  
+
+Program state
+ID: 1 
+Execution Stack: Print (v); v=rH(b) - 2 > rH(a)?100:200; Print (v) If (rH(a) < rH(b)) then {v = 100} else {v = 200}  
+Symbol Table: a --> (1, int)
+b --> (2, int)
+v --> 0 
+Heap: (1 -> 1) (2 -> 2)  
+Output Console:  
+File Table:  
+
+Program state
+ID: 1 
+Execution Stack: Print (v); v=rH(b) - 2 > rH(a)?100:200; Print (v)  
+Symbol Table: a --> (1, int)
+b --> (2, int)
+v --> 100 
+Heap: (1 -> 1) (2 -> 2)  
+Output Console:  
+File Table:  
+
+Program state
+ID: 1 
+Execution Stack: v=rH(b) - 2 > rH(a)?100:200; Print (v) Print (v)  
+Symbol Table: a --> (1, int)
+b --> (2, int)
+v --> 100 
+Heap: (1 -> 1) (2 -> 2)  
+Output Console:  
+File Table:  
+
+Program state
+ID: 1 
+Execution Stack: v=rH(b) - 2 > rH(a)?100:200; Print (v)  
+Symbol Table: a --> (1, int)
+b --> (2, int)
+v --> 100 
+Heap: (1 -> 1) (2 -> 2)  
+Output Console: 100
+ 
+File Table:  
+
+Program state
+ID: 1 
+Execution Stack: Print (v) v=rH(b) - 2 > rH(a)?100:200  
+Symbol Table: a --> (1, int)
+b --> (2, int)
+v --> 100 
+Heap: (1 -> 1) (2 -> 2)  
+Output Console: 100
+ 
+File Table:  
+
+Program state
+ID: 1 
+Execution Stack: Print (v) If (rH(b) - 2 > rH(a)) then {v = 100} else {v = 200}  
+Symbol Table: a --> (1, int)
+b --> (2, int)
+v --> 100 
+Heap: (1 -> 1) (2 -> 2)  
+Output Console: 100
+ 
+File Table:  
+
+Program state
+ID: 1 
+Execution Stack: Print (v)  
+Symbol Table: a --> (1, int)
+b --> (2, int)
+v --> 200 
+Heap: (1 -> 1) (2 -> 2)  
+Output Console: 100
+ 
+File Table:  
+
+Program state
+ID: 1 
+Execution Stack:  
+Symbol Table: a --> (1, int)
+b --> (2, int)
+v --> 200 
+Heap: (1 -> 1) (2 -> 2)  
+Output Console: 100
+200
+ 
+File Table:  
+

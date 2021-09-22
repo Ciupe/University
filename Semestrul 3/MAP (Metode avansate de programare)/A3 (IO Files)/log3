@@ -1,0 +1,70 @@
+Execution Stack: int v; a = true; If (a) then {v = 2} else {v = 3}; Print (v) bool a 
+SymbolTable:
+
+Output:
+
+
+
+Execution Stack: int v; a = true; If (a) then {v = 2} else {v = 3}; Print (v) 
+SymbolTable:
+a --> false
+Output:
+
+
+
+Execution Stack: a = true; If (a) then {v = 2} else {v = 3}; Print (v) int v 
+SymbolTable:
+a --> false
+Output:
+
+
+
+Execution Stack: a = true; If (a) then {v = 2} else {v = 3}; Print (v) 
+SymbolTable:
+a --> false
+v --> 0
+Output:
+
+
+
+Execution Stack: If (a) then {v = 2} else {v = 3}; Print (v) a = true 
+SymbolTable:
+a --> false
+v --> 0
+Output:
+
+
+
+Execution Stack: If (a) then {v = 2} else {v = 3}; Print (v) 
+SymbolTable:
+a --> true
+v --> 0
+Output:
+
+
+
+Execution Stack: Print (v) If (a) then {v = 2} else {v = 3} 
+SymbolTable:
+a --> true
+v --> 0
+Output:
+
+
+
+Execution Stack: Print (v) 
+SymbolTable:
+a --> true
+v --> 2
+Output:
+
+
+
+Execution Stack: 
+SymbolTable:
+a --> true
+v --> 2
+Output:
+2
+
+
+

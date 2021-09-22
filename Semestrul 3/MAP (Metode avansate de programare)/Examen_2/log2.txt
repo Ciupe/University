@@ -1,0 +1,79 @@
+Program state
+ID: 3 
+Execution Stack: int v; a = true; If (a) then {v = 2} else {v = 3}; Print (v) bool a  
+Symbol Table:  
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 3 
+Execution Stack: int v; a = true; If (a) then {v = 2} else {v = 3}; Print (v)  
+Symbol Table: a --> false 
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 3 
+Execution Stack: a = true; If (a) then {v = 2} else {v = 3}; Print (v) int v  
+Symbol Table: a --> false 
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 3 
+Execution Stack: a = true; If (a) then {v = 2} else {v = 3}; Print (v)  
+Symbol Table: a --> false
+v --> 0 
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 3 
+Execution Stack: If (a) then {v = 2} else {v = 3}; Print (v) a = true  
+Symbol Table: a --> false
+v --> 0 
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 3 
+Execution Stack: If (a) then {v = 2} else {v = 3}; Print (v)  
+Symbol Table: a --> true
+v --> 0 
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 3 
+Execution Stack: Print (v) If (a) then {v = 2} else {v = 3}  
+Symbol Table: a --> true
+v --> 0 
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 3 
+Execution Stack: Print (v)  
+Symbol Table: a --> true
+v --> 2 
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 3 
+Execution Stack:  
+Symbol Table: a --> true
+v --> 2 
+Heap:  
+Output Console: 2
+ 
+File Table:  
+

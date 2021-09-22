@@ -1,0 +1,507 @@
+Execution Stack: int x; x = 4; (while (x >= 0) Print (x); x = x - 1); Print (x) 
+SymbolTable:
+
+Output:
+
+
+
+Execution Stack: x = 4; (while (x >= 0) Print (x); x = x - 1); Print (x) int x 
+SymbolTable:
+
+Output:
+
+
+
+Execution Stack: x = 4; (while (x >= 0) Print (x); x = x - 1); Print (x) int x 
+SymbolTable:
+
+Output:
+
+
+
+Execution Stack: x = 4; (while (x >= 0) Print (x); x = x - 1); Print (x) 
+SymbolTable:
+x --> 0
+Output:
+
+
+
+Execution Stack: x = 4; (while (x >= 0) Print (x); x = x - 1); Print (x) 
+SymbolTable:
+x --> 0
+Output:
+
+
+
+Execution Stack: (while (x >= 0) Print (x); x = x - 1); Print (x) x = 4 
+SymbolTable:
+x --> 0
+Output:
+
+
+
+Execution Stack: (while (x >= 0) Print (x); x = x - 1); Print (x) x = 4 
+SymbolTable:
+x --> 0
+Output:
+
+
+
+Execution Stack: (while (x >= 0) Print (x); x = x - 1); Print (x) 
+SymbolTable:
+x --> 4
+Output:
+
+
+
+Execution Stack: (while (x >= 0) Print (x); x = x - 1); Print (x) 
+SymbolTable:
+x --> 4
+Output:
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) 
+SymbolTable:
+x --> 4
+Output:
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) 
+SymbolTable:
+x --> 4
+Output:
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) Print (x); x = x - 1 
+SymbolTable:
+x --> 4
+Output:
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) Print (x); x = x - 1 
+SymbolTable:
+x --> 4
+Output:
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) x = x - 1 Print (x) 
+SymbolTable:
+x --> 4
+Output:
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) x = x - 1 Print (x) 
+SymbolTable:
+x --> 4
+Output:
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) x = x - 1 
+SymbolTable:
+x --> 4
+Output:
+4
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) x = x - 1 
+SymbolTable:
+x --> 4
+Output:
+4
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) 
+SymbolTable:
+x --> 3
+Output:
+4
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) 
+SymbolTable:
+x --> 3
+Output:
+4
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) Print (x); x = x - 1 
+SymbolTable:
+x --> 3
+Output:
+4
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) Print (x); x = x - 1 
+SymbolTable:
+x --> 3
+Output:
+4
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) x = x - 1 Print (x) 
+SymbolTable:
+x --> 3
+Output:
+4
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) x = x - 1 Print (x) 
+SymbolTable:
+x --> 3
+Output:
+4
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) x = x - 1 
+SymbolTable:
+x --> 3
+Output:
+4
+3
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) x = x - 1 
+SymbolTable:
+x --> 3
+Output:
+4
+3
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) 
+SymbolTable:
+x --> 2
+Output:
+4
+3
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) 
+SymbolTable:
+x --> 2
+Output:
+4
+3
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) Print (x); x = x - 1 
+SymbolTable:
+x --> 2
+Output:
+4
+3
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) Print (x); x = x - 1 
+SymbolTable:
+x --> 2
+Output:
+4
+3
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) x = x - 1 Print (x) 
+SymbolTable:
+x --> 2
+Output:
+4
+3
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) x = x - 1 Print (x) 
+SymbolTable:
+x --> 2
+Output:
+4
+3
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) x = x - 1 
+SymbolTable:
+x --> 2
+Output:
+4
+3
+2
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) x = x - 1 
+SymbolTable:
+x --> 2
+Output:
+4
+3
+2
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) 
+SymbolTable:
+x --> 1
+Output:
+4
+3
+2
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) 
+SymbolTable:
+x --> 1
+Output:
+4
+3
+2
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) Print (x); x = x - 1 
+SymbolTable:
+x --> 1
+Output:
+4
+3
+2
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) Print (x); x = x - 1 
+SymbolTable:
+x --> 1
+Output:
+4
+3
+2
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) x = x - 1 Print (x) 
+SymbolTable:
+x --> 1
+Output:
+4
+3
+2
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) x = x - 1 Print (x) 
+SymbolTable:
+x --> 1
+Output:
+4
+3
+2
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) x = x - 1 
+SymbolTable:
+x --> 1
+Output:
+4
+3
+2
+1
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) x = x - 1 
+SymbolTable:
+x --> 1
+Output:
+4
+3
+2
+1
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) 
+SymbolTable:
+x --> 0
+Output:
+4
+3
+2
+1
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) 
+SymbolTable:
+x --> 0
+Output:
+4
+3
+2
+1
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) Print (x); x = x - 1 
+SymbolTable:
+x --> 0
+Output:
+4
+3
+2
+1
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) Print (x); x = x - 1 
+SymbolTable:
+x --> 0
+Output:
+4
+3
+2
+1
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) x = x - 1 Print (x) 
+SymbolTable:
+x --> 0
+Output:
+4
+3
+2
+1
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) x = x - 1 Print (x) 
+SymbolTable:
+x --> 0
+Output:
+4
+3
+2
+1
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) x = x - 1 
+SymbolTable:
+x --> 0
+Output:
+4
+3
+2
+1
+0
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) x = x - 1 
+SymbolTable:
+x --> 0
+Output:
+4
+3
+2
+1
+0
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) 
+SymbolTable:
+x --> -1
+Output:
+4
+3
+2
+1
+0
+
+
+
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) 
+SymbolTable:
+x --> -1
+Output:
+4
+3
+2
+1
+0
+
+
+
+Execution Stack: Print (x) 
+SymbolTable:
+x --> -1
+Output:
+4
+3
+2
+1
+0
+
+
+
+Execution Stack: Print (x) 
+SymbolTable:
+x --> -1
+Output:
+4
+3
+2
+1
+0
+
+
+
+Execution Stack: 
+SymbolTable:
+x --> -1
+Output:
+4
+3
+2
+1
+0
+-1
+
+
+
+Execution Stack: 
+SymbolTable:
+x --> -1
+Output:
+4
+3
+2
+1
+0
+-1
+
+
+

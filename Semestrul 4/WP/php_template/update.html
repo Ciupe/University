@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Update</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="./">HOME</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./display.html">Display</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./add.html">Add</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="center jumbotron">
+            <h1>Update Item</h1>
+
+            <br />
+            <form action="update.php" method="post" class="justify-content-center">
+                <input type="hidden" class="form-control" id="id" name="id"/>
+                <label for="inputColumn1">Column 1</label>
+                <input type="text" class="form-control" id="inputColumn1" name="column1"/>
+                <br />
+                <label for="inputColumn2">Column 2</label>
+                <input type="text" class="form-control" id="inputColumn2" name="column2"/>
+                <br />
+                <label for="inputColumn3">Column 3</label>
+                <input type="text" class="form-control" id="inputColumn3" name="column3"/>
+                <br />
+                <label for="inputColumn4">Column 4</label>
+                <input type="text" class="form-control" id="inputColumn4" name="column4"/>
+                <br />
+                <button type="submit" class="btn btn-dark">Update Item</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            console.log("LOADED");
+            let url = new URL(window.location.href)
+            let id = url.searchParams.get("id");
+            console.log(id);
+            $.ajax({
+                url: "http://localhost/php_template/getItem.php?id=" + id,
+                type: "GET",
+                dataType: "json",
+                success: function(response) {
+                    console.log(response);
+                    $("#id").val(response["id"]);
+                    $("#inputColumn1").val(response["column1"]);
+                    $("#inputColumn2").val(response["column2"]);
+                    $("#inputColumn3").val(response["column3"]);
+                    $("#inputColumn4").val(response["column4"]);
+                }
+            })
+        });
+    </script>
+</body>
+</html>

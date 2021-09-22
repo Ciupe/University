@@ -1,0 +1,70 @@
+Execution Stack: int b; a = 2 + 3 * 5; b = a + 1; Print (b) int a 
+SymbolTable:
+
+Output:
+
+
+
+Execution Stack: int b; a = 2 + 3 * 5; b = a + 1; Print (b) 
+SymbolTable:
+a --> 0
+Output:
+
+
+
+Execution Stack: a = 2 + 3 * 5; b = a + 1; Print (b) int b 
+SymbolTable:
+a --> 0
+Output:
+
+
+
+Execution Stack: a = 2 + 3 * 5; b = a + 1; Print (b) 
+SymbolTable:
+a --> 0
+b --> 0
+Output:
+
+
+
+Execution Stack: b = a + 1; Print (b) a = 2 + 3 * 5 
+SymbolTable:
+a --> 0
+b --> 0
+Output:
+
+
+
+Execution Stack: b = a + 1; Print (b) 
+SymbolTable:
+a --> 17
+b --> 0
+Output:
+
+
+
+Execution Stack: Print (b) b = a + 1 
+SymbolTable:
+a --> 17
+b --> 0
+Output:
+
+
+
+Execution Stack: Print (b) 
+SymbolTable:
+a --> 17
+b --> 18
+Output:
+
+
+
+Execution Stack: 
+SymbolTable:
+a --> 17
+b --> 18
+Output:
+18
+
+
+

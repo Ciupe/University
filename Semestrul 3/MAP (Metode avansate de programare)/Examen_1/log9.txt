@@ -1,0 +1,88 @@
+Program state
+ID: 1 
+Execution Stack: int x; x = 15; v=x < 10?100:200; Print (v) int v  
+Symbol Table:  
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 1 
+Execution Stack: int x; x = 15; v=x < 10?100:200; Print (v)  
+Symbol Table: v --> 0 
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 1 
+Execution Stack: x = 15; v=x < 10?100:200; Print (v) int x  
+Symbol Table: v --> 0 
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 1 
+Execution Stack: x = 15; v=x < 10?100:200; Print (v)  
+Symbol Table: v --> 0
+x --> 0 
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 1 
+Execution Stack: v=x < 10?100:200; Print (v) x = 15  
+Symbol Table: v --> 0
+x --> 0 
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 1 
+Execution Stack: v=x < 10?100:200; Print (v)  
+Symbol Table: v --> 0
+x --> 15 
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 1 
+Execution Stack: Print (v) v=x < 10?100:200  
+Symbol Table: v --> 0
+x --> 15 
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 1 
+Execution Stack: Print (v) If (x < 10) then {v = 100} else {v = 200}  
+Symbol Table: v --> 0
+x --> 15 
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 1 
+Execution Stack: Print (v)  
+Symbol Table: v --> 200
+x --> 15 
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 1 
+Execution Stack:  
+Symbol Table: v --> 200
+x --> 15 
+Heap:  
+Output Console: 200
+ 
+File Table:  
+

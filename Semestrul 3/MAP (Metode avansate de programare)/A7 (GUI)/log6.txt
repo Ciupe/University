@@ -1,0 +1,277 @@
+Program state
+ID: 4 
+Execution Stack: x = 4; (while (x >= 0) Print (x); x = x - 1); Print (x) int x  
+Symbol Table:  
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 4 
+Execution Stack: x = 4; (while (x >= 0) Print (x); x = x - 1); Print (x)  
+Symbol Table: x --> 0 
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 4 
+Execution Stack: (while (x >= 0) Print (x); x = x - 1); Print (x) x = 4  
+Symbol Table: x --> 0 
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 4 
+Execution Stack: (while (x >= 0) Print (x); x = x - 1); Print (x)  
+Symbol Table: x --> 4 
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 4 
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1)  
+Symbol Table: x --> 4 
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 4 
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) Print (x); x = x - 1  
+Symbol Table: x --> 4 
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 4 
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) x = x - 1 Print (x)  
+Symbol Table: x --> 4 
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 4 
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) x = x - 1  
+Symbol Table: x --> 4 
+Heap:  
+Output Console: 4
+ 
+File Table:  
+
+Program state
+ID: 4 
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1)  
+Symbol Table: x --> 3 
+Heap:  
+Output Console: 4
+ 
+File Table:  
+
+Program state
+ID: 4 
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) Print (x); x = x - 1  
+Symbol Table: x --> 3 
+Heap:  
+Output Console: 4
+ 
+File Table:  
+
+Program state
+ID: 4 
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) x = x - 1 Print (x)  
+Symbol Table: x --> 3 
+Heap:  
+Output Console: 4
+ 
+File Table:  
+
+Program state
+ID: 4 
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) x = x - 1  
+Symbol Table: x --> 3 
+Heap:  
+Output Console: 4
+3
+ 
+File Table:  
+
+Program state
+ID: 4 
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1)  
+Symbol Table: x --> 2 
+Heap:  
+Output Console: 4
+3
+ 
+File Table:  
+
+Program state
+ID: 4 
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) Print (x); x = x - 1  
+Symbol Table: x --> 2 
+Heap:  
+Output Console: 4
+3
+ 
+File Table:  
+
+Program state
+ID: 4 
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) x = x - 1 Print (x)  
+Symbol Table: x --> 2 
+Heap:  
+Output Console: 4
+3
+ 
+File Table:  
+
+Program state
+ID: 4 
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) x = x - 1  
+Symbol Table: x --> 2 
+Heap:  
+Output Console: 4
+3
+2
+ 
+File Table:  
+
+Program state
+ID: 4 
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1)  
+Symbol Table: x --> 1 
+Heap:  
+Output Console: 4
+3
+2
+ 
+File Table:  
+
+Program state
+ID: 4 
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) Print (x); x = x - 1  
+Symbol Table: x --> 1 
+Heap:  
+Output Console: 4
+3
+2
+ 
+File Table:  
+
+Program state
+ID: 4 
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) x = x - 1 Print (x)  
+Symbol Table: x --> 1 
+Heap:  
+Output Console: 4
+3
+2
+ 
+File Table:  
+
+Program state
+ID: 4 
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) x = x - 1  
+Symbol Table: x --> 1 
+Heap:  
+Output Console: 4
+3
+2
+1
+ 
+File Table:  
+
+Program state
+ID: 4 
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1)  
+Symbol Table: x --> 0 
+Heap:  
+Output Console: 4
+3
+2
+1
+ 
+File Table:  
+
+Program state
+ID: 4 
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) Print (x); x = x - 1  
+Symbol Table: x --> 0 
+Heap:  
+Output Console: 4
+3
+2
+1
+ 
+File Table:  
+
+Program state
+ID: 4 
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) x = x - 1 Print (x)  
+Symbol Table: x --> 0 
+Heap:  
+Output Console: 4
+3
+2
+1
+ 
+File Table:  
+
+Program state
+ID: 4 
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1) x = x - 1  
+Symbol Table: x --> 0 
+Heap:  
+Output Console: 4
+3
+2
+1
+0
+ 
+File Table:  
+
+Program state
+ID: 4 
+Execution Stack: Print (x) (while (x >= 0) Print (x); x = x - 1)  
+Symbol Table: x --> -1 
+Heap:  
+Output Console: 4
+3
+2
+1
+0
+ 
+File Table:  
+
+Program state
+ID: 4 
+Execution Stack: Print (x)  
+Symbol Table: x --> -1 
+Heap:  
+Output Console: 4
+3
+2
+1
+0
+ 
+File Table:  
+
+Program state
+ID: 4 
+Execution Stack:  
+Symbol Table: x --> -1 
+Heap:  
+Output Console: 4
+3
+2
+1
+0
+-1
+ 
+File Table:  
+

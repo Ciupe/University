@@ -1,0 +1,154 @@
+Program state
+ID: 5 
+Execution Stack: fileName = test.in; Open(fileName); int x; Read (fileName, x); Print (x); Read (fileName, x); Print (x); Close(fileName) string fileName  
+Symbol Table:  
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 5 
+Execution Stack: fileName = test.in; Open(fileName); int x; Read (fileName, x); Print (x); Read (fileName, x); Print (x); Close(fileName)  
+Symbol Table: fileName -->  
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 5 
+Execution Stack: Open(fileName); int x; Read (fileName, x); Print (x); Read (fileName, x); Print (x); Close(fileName) fileName = test.in  
+Symbol Table: fileName -->  
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 5 
+Execution Stack: Open(fileName); int x; Read (fileName, x); Print (x); Read (fileName, x); Print (x); Close(fileName)  
+Symbol Table: fileName --> test.in 
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 5 
+Execution Stack: int x; Read (fileName, x); Print (x); Read (fileName, x); Print (x); Close(fileName) Open(fileName)  
+Symbol Table: fileName --> test.in 
+Heap:  
+Output Console:  
+File Table:  
+
+Program state
+ID: 5 
+Execution Stack: int x; Read (fileName, x); Print (x); Read (fileName, x); Print (x); Close(fileName)  
+Symbol Table: fileName --> test.in 
+Heap:  
+Output Console:  
+File Table: test.in --> java.io.BufferedReader@1add4bae 
+
+Program state
+ID: 5 
+Execution Stack: Read (fileName, x); Print (x); Read (fileName, x); Print (x); Close(fileName) int x  
+Symbol Table: fileName --> test.in 
+Heap:  
+Output Console:  
+File Table: test.in --> java.io.BufferedReader@1add4bae 
+
+Program state
+ID: 5 
+Execution Stack: Read (fileName, x); Print (x); Read (fileName, x); Print (x); Close(fileName)  
+Symbol Table: fileName --> test.in
+x --> 0 
+Heap:  
+Output Console:  
+File Table: test.in --> java.io.BufferedReader@1add4bae 
+
+Program state
+ID: 5 
+Execution Stack: Print (x); Read (fileName, x); Print (x); Close(fileName) Read (fileName, x)  
+Symbol Table: fileName --> test.in
+x --> 0 
+Heap:  
+Output Console:  
+File Table: test.in --> java.io.BufferedReader@1add4bae 
+
+Program state
+ID: 5 
+Execution Stack: Print (x); Read (fileName, x); Print (x); Close(fileName)  
+Symbol Table: fileName --> test.in
+x --> 15 
+Heap:  
+Output Console:  
+File Table: test.in --> java.io.BufferedReader@1add4bae 
+
+Program state
+ID: 5 
+Execution Stack: Read (fileName, x); Print (x); Close(fileName) Print (x)  
+Symbol Table: fileName --> test.in
+x --> 15 
+Heap:  
+Output Console:  
+File Table: test.in --> java.io.BufferedReader@1add4bae 
+
+Program state
+ID: 5 
+Execution Stack: Read (fileName, x); Print (x); Close(fileName)  
+Symbol Table: fileName --> test.in
+x --> 15 
+Heap:  
+Output Console: 15
+ 
+File Table: test.in --> java.io.BufferedReader@1add4bae 
+
+Program state
+ID: 5 
+Execution Stack: Print (x); Close(fileName) Read (fileName, x)  
+Symbol Table: fileName --> test.in
+x --> 15 
+Heap:  
+Output Console: 15
+ 
+File Table: test.in --> java.io.BufferedReader@1add4bae 
+
+Program state
+ID: 5 
+Execution Stack: Print (x); Close(fileName)  
+Symbol Table: fileName --> test.in
+x --> 50 
+Heap:  
+Output Console: 15
+ 
+File Table: test.in --> java.io.BufferedReader@1add4bae 
+
+Program state
+ID: 5 
+Execution Stack: Close(fileName) Print (x)  
+Symbol Table: fileName --> test.in
+x --> 50 
+Heap:  
+Output Console: 15
+ 
+File Table: test.in --> java.io.BufferedReader@1add4bae 
+
+Program state
+ID: 5 
+Execution Stack: Close(fileName)  
+Symbol Table: fileName --> test.in
+x --> 50 
+Heap:  
+Output Console: 15
+50
+ 
+File Table: test.in --> java.io.BufferedReader@1add4bae 
+
+Program state
+ID: 5 
+Execution Stack:  
+Symbol Table: fileName --> test.in
+x --> 50 
+Heap:  
+Output Console: 15
+50
+ 
+File Table:  
+

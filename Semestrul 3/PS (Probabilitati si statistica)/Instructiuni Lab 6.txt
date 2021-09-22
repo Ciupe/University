@@ -1,0 +1,7 @@
+take a vector X where we write all the selection data
+take a variable n where we deposit len(x)
+using some commentaries, say that the null hypothesis H0 is... and research hypothesis H1 is...
+also with commentaries, write what kind of test this is and write it on your screen: "This is a ... test for a ... parameter in ... condition"
+ask for test value niu0 from the user
+write the prototype of the function prof. was discussing (with any variable we wish)
+left test => critical region is -inf to TT(alpha)

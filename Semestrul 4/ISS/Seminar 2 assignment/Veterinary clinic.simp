@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="12.79" multi-file="no" uid="simp095f1957aa89437aa519a449aae1c0df">
+  <meta>
+    <name>Veterinary clinic</name>
+    <authors>Ciupe Sergiu</authors>
+    <description />
+  </meta>
+  <counters models="1">
+    <entity-names>
+      <counter>
+        <item-type type-id="package" type="Package" />
+        <value>1</value>
+      </counter>
+      <counter>
+        <item-type type-id="class" type="Class" />
+        <value>4</value>
+      </counter>
+    </entity-names>
+    <entity-ids>
+      <counter>
+        <item-type type-id="group" type="Group" />
+        <value>112</value>
+      </counter>
+      <counter>
+        <item-type type-id="package" type="Package" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="class" type="Class" />
+        <value>5</value>
+      </counter>
+      <counter>
+        <item-type type-id="property" type="Property" />
+        <value>19</value>
+      </counter>
+    </entity-ids>
+    <diagrams>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlClassDiagram</type>
+        <value>1</value>
+      </counter>
+    </diagrams>
+    <fields>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.DiagramItems.Fields.OperationField</type>
+        <value>7</value>
+      </counter>
+    </fields>
+  </counters>
+  <alias-groups />
+  <management uid="md-12c526201eb7455e8e7f84eefa132700" name="" task-id-sequence="0">
+    <working-schedule uid="ws-83229b6290d345e8981df7d4c5b5cb58" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
+    <persons>
+      <person id="">
+        <first-name>Ciupe</first-name>
+        <last-name>Sergiu</last-name>
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+        <working-schedule uid="ws-9b3c1e35b7a64351b14d4cb72f7939e3" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
+      </person>
+      <person id="">
+        <first-name>Ciupe</first-name>
+        <last-name>Sergiu</last-name>
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-039c9c8852a94f2c9fc644bb63b67f82" />
+  <types default="UML">
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types>
+      <type id="Class:d7386a57324e42459362b252a237c751" tid="" name="Animal" description="" class-ref="d7386a57324e42459362b252a237c751" />
+    </custom-types>
+  </types>
+  <items />
+  <models>
+    <model id="pe5fa8a0b235a41f887db25a7760acbe4_481448846" name="Model1" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author>Ciupe Sergiu</author>
+        </authors>
+        <description />
+        <creation-date>03/23/2021 21:46:01</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items />
+      <sub-models />
+      <diagram type="uml-class" id="p19defe47cab249a599eb33b929ed2c80_453674938" name="ClassDiagram1" order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-field-tags="true" show-empty-compartments="true" show-special-indicators="false" show-rules="true" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-visibility-sign="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-data="true" show-description="false" show-field-description="false" auto-routed-paths="false" default-line-style="default" view-location="-100,13">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author>Ciupe Sergiu</author>
+          </authors>
+          <description />
+          <creation-date>03/23/2021 21:46:02</creation-date>
+          <change-date>03/23/2021 21:46:53</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="736d8a0edf2d4122ba6ced6b769122aa" cid="PKG001" type="package" name="Veterinary clinic" style-class="" change-tracking-state="added" creator="" creation-date="03/23/2021 21:46:06" visibility="undefined">
+            <owned-items>
+              <owned-item ref="d6af453d17674c0ba0d0d0a7b414c2a0" />
+              <owned-item ref="693ff7ef3149467494ff8588e39830d9" />
+              <owned-item ref="8af3d2dc2a98463c9fc91bb183065701" />
+              <owned-item ref="d7386a57324e42459362b252a237c751" />
+            </owned-items>
+          </item>
+          <item id="d6af453d17674c0ba0d0d0a7b414c2a0" cid="C001" type="class" name="Owner" style-class="" owner="736d8a0edf2d4122ba6ced6b769122aa" change-tracking-state="added" creator="" creation-date="03/23/2021 21:46:15" visibility="undefined">
+            <owned-items>
+              <owned-item ref="f71f45f6804540f5897c45d041e3ec58" />
+              <owned-item ref="a311d34c7bbd4bedbc73d228fdca41ba" />
+              <owned-item ref="976d088316c6492393a9e428f24723dd" />
+            </owned-items>
+            <attributes>
+              <attribute id="accbd5c2472a645779999339e6214d08e367" cid="PROP017" name="id" creation-date="03/24/2021 11:15:50" property-ref="976d088316c6492393a9e428f24723dd" />
+              <attribute id="a7d57e7e1345b40478ea83901ce55085d250" cid="PROP001" name="name" creation-date="03/23/2021 21:48:25" property-ref="f71f45f6804540f5897c45d041e3ec58" />
+              <attribute id="afd528bf73cb142b3a9372babbbd3f12199" cid="PROP010" name="age" creation-date="03/23/2021 21:50:20" property-ref="a311d34c7bbd4bedbc73d228fdca41ba" />
+            </attributes>
+            <operations>
+              <operation id="ode4f509b8a7f4b2f94d03277eaad4213741" cid="ELEM001" name="setName" creation-date="03/23/2021 21:56:25" type="" type-id="" visibility="public" />
+              <operation id="o924dd641e8754016aec592608352df60108" cid="ELEM002" name="getName" creation-date="03/23/2021 21:56:30" type="" type-id="" visibility="public" />
+              <operation id="o0c8d711b0afc426385f0f12d2adf04e2108" cid="ELEM003" name="setAge" creation-date="03/23/2021 21:56:34" type="" type-id="" visibility="public" />
+              <operation id="o2afe4a221bf74be499e99c10d2817abd909" cid="ELEM004" name="getAge" creation-date="03/23/2021 21:56:36" type="" type-id="" visibility="public" />
+            </operations>
+          </item>
+          <item id="693ff7ef3149467494ff8588e39830d9" cid="C002" type="class" name="Pet owner" style-class="" owner="736d8a0edf2d4122ba6ced6b769122aa" change-tracking-state="added" creator="" creation-date="03/23/2021 21:46:19" visibility="undefined">
+            <owned-items>
+              <owned-item ref="e27f33ecbe6949bf8f3820838002ff39" />
+              <owned-item ref="5980038621ab4a58867fb1312bea269e" />
+              <owned-item ref="ef8e3edcfc284a10b3a3936010548c43" />
+              <owned-item ref="ac69b2bb9231479bb33353606027b278" />
+            </owned-items>
+            <attributes>
+              <attribute id="a893c47f1019d4c75a59c213b19e7f6c7589" cid="PROP015" name="id" creation-date="03/24/2021 11:15:34" property-ref="ac69b2bb9231479bb33353606027b278" />
+              <attribute id="a494a653fe6994134b50a6cd8de2bd87b640" cid="PROP003" name="name" creation-date="03/23/2021 21:48:43" property-ref="e27f33ecbe6949bf8f3820838002ff39" />
+              <attribute id="a4ebb43c09141408b82cc9f6ea2f69b27955" cid="PROP013" name="animal" creation-date="03/23/2021 21:50:51" property-ref="5980038621ab4a58867fb1312bea269e" />
+              <attribute id="a3ee95efeb0fb4e4a8c216a45389c2ae2624" cid="PROP014" name="numberOfPets" creation-date="03/23/2021 21:55:40" property-ref="ef8e3edcfc284a10b3a3936010548c43" />
+            </attributes>
+            <operations>
+              <operation id="o524e7ffb659e4aebb93ee569e1e90a68179" cid="ELEM005" name="makeAppointment" creation-date="03/24/2021 11:15:57" type="" type-id="" visibility="public" />
+            </operations>
+          </item>
+          <item id="8af3d2dc2a98463c9fc91bb183065701" cid="C003" type="class" name="Employee" style-class="" owner="736d8a0edf2d4122ba6ced6b769122aa" change-tracking-state="added" creator="" creation-date="03/23/2021 21:46:21" visibility="undefined">
+            <owned-items>
+              <owned-item ref="a4e3aebc22c44e0eadcd7a243313c425" />
+              <owned-item ref="caba367d34104a2b829a8a9990082bf9" />
+              <owned-item ref="aff21821bcd8436babbbb9365f5ada58" />
+              <owned-item ref="0942313b84a14f5383dcf3c4b7f64b5c" />
+            </owned-items>
+            <attributes>
+              <attribute id="a96bb45e6704648f186a5976debc9e4d4968" cid="PROP012" name="id" creation-date="03/23/2021 21:50:37" property-ref="0942313b84a14f5383dcf3c4b7f64b5c" />
+              <attribute id="a97c7d219c34d40ecbe83bf22d5a2ca40510" cid="PROP002" name="name" creation-date="03/23/2021 21:48:38" property-ref="a4e3aebc22c44e0eadcd7a243313c425" />
+              <attribute id="ac8e78039f09649bbaf60eae9b8766777555" cid="PROP009" name="salary" creation-date="03/23/2021 21:49:58" property-ref="caba367d34104a2b829a8a9990082bf9" />
+              <attribute id="a291bfd02f8894c7681d7357554aa9fec165" cid="PROP011" name="age" creation-date="03/23/2021 21:50:24" property-ref="aff21821bcd8436babbbb9365f5ada58" />
+            </attributes>
+            <operations>
+              <operation id="od79b7b623a4642ee90566f975e7fec4a536" cid="ELEM006" name="giveRecipe" creation-date="03/24/2021 11:16:24" type="" type-id="" visibility="public" />
+            </operations>
+          </item>
+          <item id="d7386a57324e42459362b252a237c751" cid="C004" type="class" name="Animal" style-class="" owner="736d8a0edf2d4122ba6ced6b769122aa" change-tracking-state="added" creator="" creation-date="03/23/2021 21:46:53" visibility="undefined">
+            <owned-items>
+              <owned-item ref="47fe8cf0db5c40d38849b8aca7b57657" />
+              <owned-item ref="25873b1ca5674cb5bf21f578de5e353e" />
+              <owned-item ref="cbd30a614e0c462e82c455b83bfd40b1" />
+              <owned-item ref="3fd9e93db15d4740ac3ccb67c937427d" />
+              <owned-item ref="c11179222b584b75ac7462ad6324be26" />
+              <owned-item ref="0e7a1308c7fa49b5b6c6950d93a3b582" />
+            </owned-items>
+            <attributes>
+              <attribute id="a66add1dd1bcb4423ad85d69d397032cc307" cid="PROP016" name="id" creation-date="03/24/2021 11:15:42" property-ref="0e7a1308c7fa49b5b6c6950d93a3b582" />
+              <attribute id="a62ee4e2d594c43588c29dc3c49c1cb38748" cid="PROP004" name="name" creation-date="03/23/2021 21:48:48" property-ref="47fe8cf0db5c40d38849b8aca7b57657" />
+              <attribute id="a2d048a6509854dfb974de18f4f782234968" cid="PROP006" name="animalType" creation-date="03/23/2021 21:49:20" property-ref="cbd30a614e0c462e82c455b83bfd40b1" />
+              <attribute id="a366b558e724645449351f29e9ee561eb651" cid="PROP005" name="breed" creation-date="03/23/2021 21:49:12" property-ref="25873b1ca5674cb5bf21f578de5e353e" />
+              <attribute id="a11d4df112cfd461fb55e4d8a98f2c1b2260" cid="PROP007" name="isSick" creation-date="03/23/2021 21:49:33" property-ref="3fd9e93db15d4740ac3ccb67c937427d" />
+              <attribute id="a1e34753d8f34460cb0485df860f0020f792" cid="PROP008" name="age" creation-date="03/23/2021 21:49:45" property-ref="c11179222b584b75ac7462ad6324be26" />
+            </attributes>
+          </item>
+          <item id="f71f45f6804540f5897c45d041e3ec58" cid="PROP001" type="property" name="name" style-class="" owner="d6af453d17674c0ba0d0d0a7b414c2a0" creator="" creation-date="03/23/2021 21:48:25" visibility="private">
+            <feature />
+            <structural-feature type="String" type-id="Uml.String" />
+            <property />
+          </item>
+          <item id="a4e3aebc22c44e0eadcd7a243313c425" cid="PROP002" type="property" name="name" style-class="" owner="8af3d2dc2a98463c9fc91bb183065701" creator="" creation-date="03/23/2021 21:48:38" visibility="private">
+            <feature />
+            <structural-feature type="String" type-id="Uml.String" />
+            <property />
+          </item>
+          <item id="e27f33ecbe6949bf8f3820838002ff39" cid="PROP003" type="property" name="name" style-class="" owner="693ff7ef3149467494ff8588e39830d9" creator="" creation-date="03/23/2021 21:48:43" visibility="private">
+            <feature />
+            <structural-feature type="String" type-id="Uml.String" />
+            <property />
+          </item>
+          <item id="47fe8cf0db5c40d38849b8aca7b57657" cid="PROP004" type="property" name="name" style-class="" owner="d7386a57324e42459362b252a237c751" creator="" creation-date="03/23/2021 21:48:48" visibility="private">
+            <feature />
+            <structural-feature type="String" type-id="Uml.String" />
+            <property />
+          </item>
+          <item id="25873b1ca5674cb5bf21f578de5e353e" cid="PROP005" type="property" name="breed" style-class="" owner="d7386a57324e42459362b252a237c751" creator="" creation-date="03/23/2021 21:49:12" visibility="private">
+            <feature />
+            <structural-feature type="String" type-id="Uml.String" />
+            <property />
+          </item>
+          <item id="cbd30a614e0c462e82c455b83bfd40b1" cid="PROP006" type="property" name="animalType" style-class="" owner="d7386a57324e42459362b252a237c751" creator="" creation-date="03/23/2021 21:49:20" visibility="private">
+            <feature />
+            <structural-feature type="String" type-id="Uml.String" />
+            <property />
+          </item>
+          <item id="3fd9e93db15d4740ac3ccb67c937427d" cid="PROP007" type="property" name="isSick" style-class="" owner="d7386a57324e42459362b252a237c751" creator="" creation-date="03/23/2021 21:49:33" visibility="private">
+            <feature />
+            <structural-feature type="Boolean" type-id="Uml.Boolean" />
+            <property />
+          </item>
+          <item id="c11179222b584b75ac7462ad6324be26" cid="PROP008" type="property" name="age" style-class="" owner="d7386a57324e42459362b252a237c751" creator="" creation-date="03/23/2021 21:49:45" visibility="private">
+            <feature />
+            <structural-feature type="Integer" type-id="Uml.Integer" />
+            <property />
+          </item>
+          <item id="caba367d34104a2b829a8a9990082bf9" cid="PROP009" type="property" name="salary" style-class="" owner="8af3d2dc2a98463c9fc91bb183065701" creator="" creation-date="03/23/2021 21:49:58" visibility="private">
+            <feature />
+            <structural-feature type="Integer" type-id="Uml.Integer" />
+            <property />
+          </item>
+          <item id="a311d34c7bbd4bedbc73d228fdca41ba" cid="PROP010" type="property" name="age" style-class="" owner="d6af453d17674c0ba0d0d0a7b414c2a0" creator="" creation-date="03/23/2021 21:50:20" visibility="private">
+            <feature />
+            <structural-feature type="Integer" type-id="Uml.Integer" />
+            <property />
+          </item>
+          <item id="aff21821bcd8436babbbb9365f5ada58" cid="PROP011" type="property" name="age" style-class="" owner="8af3d2dc2a98463c9fc91bb183065701" creator="" creation-date="03/23/2021 21:50:24" visibility="private">
+            <feature />
+            <structural-feature type="Integer" type-id="Uml.Integer" />
+            <property />
+          </item>
+          <item id="0942313b84a14f5383dcf3c4b7f64b5c" cid="PROP012" type="property" name="id" style-class="" owner="8af3d2dc2a98463c9fc91bb183065701" creator="" creation-date="03/23/2021 21:50:37" visibility="private">
+            <feature />
+            <structural-feature type="Integer" type-id="Uml.Integer" />
+            <property />
+          </item>
+          <item id="5980038621ab4a58867fb1312bea269e" cid="PROP013" type="property" name="animal" style-class="" owner="693ff7ef3149467494ff8588e39830d9" creator="" creation-date="03/23/2021 21:50:51" visibility="private">
+            <feature />
+            <structural-feature type="Animal" type-id="Class:d7386a57324e42459362b252a237c751" />
+            <property />
+          </item>
+          <item id="ef8e3edcfc284a10b3a3936010548c43" cid="PROP014" type="property" name="numberOfPets" style-class="" owner="693ff7ef3149467494ff8588e39830d9" creator="" creation-date="03/23/2021 21:55:40" visibility="private">
+            <feature />
+            <structural-feature type="Integer" type-id="Uml.Integer" />
+            <property />
+          </item>
+          <item id="ac69b2bb9231479bb33353606027b278" cid="PROP015" type="property" name="id" style-class="" owner="693ff7ef3149467494ff8588e39830d9" creator="" creation-date="03/24/2021 11:15:34" visibility="private">
+            <feature />
+            <structural-feature type="Integer" type-id="Uml.Integer" />
+            <property />
+          </item>
+          <item id="0e7a1308c7fa49b5b6c6950d93a3b582" cid="PROP016" type="property" name="id" style-class="" owner="d7386a57324e42459362b252a237c751" creator="" creation-date="03/24/2021 11:15:42" visibility="private">
+            <feature />
+            <structural-feature type="Integer" type-id="Uml.Integer" />
+            <property />
+          </item>
+          <item id="976d088316c6492393a9e428f24723dd" cid="PROP017" type="property" name="id" style-class="" owner="d6af453d17674c0ba0d0d0a7b414c2a0" creator="" creation-date="03/24/2021 11:15:50" visibility="private">
+            <feature />
+            <structural-feature type="Integer" type-id="Uml.Integer" />
+            <property />
+          </item>
+        </abstract-items>
+        <layer id="b6a0f653c77747568089ae86ccb169a8" name="Default" visible="true" enabled="true" locked="false">
+          <item id="736d8a0edf2d4122ba6ced6b769122aa" iid="1fc4eb6f1f3444d8b4c621265569b77a" creation-date="03/23/2021 21:46:06" order-index="0" type="entity">
+            <layout ax="126" ay="36" awidth="813" aheight="519" x="126" y="36" width="813" height="519" rotation-center="-256.5,-159.5" />
+            <package name-in-body="false" />
+          </item>
+          <item id="d6af453d17674c0ba0d0d0a7b414c2a0" iid="697fbcf62baa48e9bec9c7f432671eab" container="736d8a0edf2d4122ba6ced6b769122aa" container-iid="1fc4eb6f1f3444d8b4c621265569b77a" creation-date="03/23/2021 21:46:15" order-index="1" type="entity">
+            <layout ax="206" ay="103" awidth="140" aheight="179" x="206" y="103" width="140" height="160" />
+            <class />
+          </item>
+          <item id="693ff7ef3149467494ff8588e39830d9" iid="a8d771855b8d42da8ea59c050aa774d4" container="736d8a0edf2d4122ba6ced6b769122aa" container-iid="1fc4eb6f1f3444d8b4c621265569b77a" creation-date="03/23/2021 21:46:19" order-index="2" type="entity">
+            <layout ax="581" ay="125" awidth="207" aheight="141" x="581" y="125" width="207" height="138" rotation-center="-33.5,11" />
+            <class />
+          </item>
+          <item id="8af3d2dc2a98463c9fc91bb183065701" iid="f0dfc0abb6e2458d9f890d3b45f4462b" container="736d8a0edf2d4122ba6ced6b769122aa" container-iid="1fc4eb6f1f3444d8b4c621265569b77a" creation-date="03/23/2021 21:46:21" order-index="3" type="entity">
+            <layout ax="206" ay="285.5" awidth="140" aheight="160" x="206" y="285.5" width="140" height="160" />
+            <class />
+          </item>
+          <item id="d7386a57324e42459362b252a237c751" iid="e6e07077b6884d10a19ad373254cb7b7" container="736d8a0edf2d4122ba6ced6b769122aa" container-iid="1fc4eb6f1f3444d8b4c621265569b77a" creation-date="03/23/2021 21:46:53" order-index="4" type="entity">
+            <layout ax="581" ay="303" awidth="207" aheight="158" x="581" y="303" width="207" height="125" rotation-center="-33.5,17.5" />
+            <class />
+          </item>
+        </layer>
+      </diagram>
+    </model>
+  </models>
+</sim-project>

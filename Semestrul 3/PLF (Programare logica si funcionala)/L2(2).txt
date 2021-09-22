@@ -1,0 +1,69 @@
+; a 2 b 2 c 1 i 0 f 1 g 0 d 2 e 0 h 0
+
+(defun parcurg_st(arb nv nm)
+    (cond
+        ((null arb) nil)
+        ((= nv (+ 1 nm)) nil)
+        (t (cons (car arb) (cons (cadr arb) (parcurg_st (cddr arb) (+ 1 nv) (+ (cadr arb) nm)))))
+    )
+)
+
+(defun parcurg_dr(arb nv nm)
+    (cond
+        ((null arb) nil)
+        ((= nv (+ 1 nm)) arb )
+        ((parcurg_dr (cddr arb) (+ 1 nv) (+ (cadr arb) nm)))
+    )
+)
+
+(defun stanga(arb)
+    (parcurg_st (cddr arb) 0 0)
+)
+
+(defun dreapta(arb)
+    (parcurg_dr (cddr arb) 0 0)
+)
+
+(defun parcurgere(l x level)
+   (cond
+        ((null l) nil)
+        ;((cons (stanga (car l)) (cdr l)))
+        ;((= level 1) l)
+        ;((cons (car l) (executare (cdr l))))
+        ;((string= (car(car l)) x) level)
+        (t (cons (stanga (car l)) (cons (dreapta (car l)) (parcurgere (cdr l) x level))))
+        ;(t (cons (stanga (car l)) (list (dreapta (car l)) (dreapta (car l)))))
+        ;(t (list (stanga (car l)) (dreapta (car l))))
+    )
+)
+
+;(defun executare(l x level)
+;    (cond
+;        ((null l) level)
+;        (t (executare (parcurgere l) x (+ level 1)))
+;    )
+;)
+
+(defun executare(l x level)
+    (cond
+        ((null l) nil)
+        ;((numberp l) l)
+        ((= level 2) l)
+        (t (executare (parcurgere l x level) x (+ level 1)))
+    )
+)
+        
+
+;(write (list (stanga '(a 2 b 2 c 1 i 0 f 1 g 0 d 2 e 0 h 0)) (dreapta '(a 2 b 2 c 1 i 0 f 1 g 0 d 2 e 0 h 0))))
+(terpri)
+;(write (stanga  '(a 2 b 2 c 1 i 0 f 1 g 0 d 2 e 0 h 0)))
+(terpri)
+;(write (dreapta  '(a 2 b 2 c 1 i 0 f 1 g 0 d 2 e 0 h 0)))
+(terpri)
+;(write (parcurgere (list (stanga '(a 2 b 2 c 1 i 0 f 1 g 0 d 2 e 0 h 0)) (dreapta '(a 2 b 2 c 1 i 0 f 1 g 0 d 2 e 0 h 0)))))
+;(write (parcurgere (list '(a 2 b 2 c 1 i 0 f 1 g 0 d 2 e 0 h 0))))
+(write (executare (list '(a 2 b 2 c 1 i 0 f 1 g 0 d 2 e 0 h 0)) "G" 0))
+;(write (car(car (list'(a 2 b 2 c 1 i 0 f 1 g 0 d 2 e 0 h 0)))))
+
+
+

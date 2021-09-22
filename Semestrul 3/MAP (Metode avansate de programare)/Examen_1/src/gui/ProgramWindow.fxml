@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="424.0" prefWidth="446.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ProgramWindowController">
+   <children>
+      <TableView fx:id="heapTableView" layoutX="14.0" layoutY="30.0" prefHeight="169.0" prefWidth="153.0">
+        <columns>
+          <TableColumn fx:id="heapTableAddresses" prefWidth="75.0" text="Address" />
+          <TableColumn fx:id="heapTableValues" prefWidth="75.0" text="Value" />
+        </columns>
+      </TableView>
+      <TableView fx:id="symbolTableView" layoutX="168.0" layoutY="30.0" prefHeight="169.0" prefWidth="153.0">
+        <columns>
+          <TableColumn fx:id="symbolTableVariableNames" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="symbolTableValues" prefWidth="75.0" text="Value" />
+        </columns>
+      </TableView>
+      <ListView fx:id="executionStackListView" layoutX="15.0" layoutY="216.0" prefHeight="169.0" prefWidth="275.0" />
+      <ListView fx:id="fileTableListView" layoutX="320.0" layoutY="30.0" prefHeight="169.0" prefWidth="122.0" />
+      <ListView fx:id="programIdsListView" layoutX="290.0" layoutY="216.0" prefHeight="169.0" prefWidth="80.0" />
+      <ListView fx:id="outputListView" layoutX="370.0" layoutY="216.0" prefHeight="169.0" prefWidth="73.0" />
+      <Text fx:id="numberOfProgramsText" layoutX="15.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of programs" wrappingWidth="275.0" />
+      <Button fx:id="runOneStepButton" layoutX="290.0" layoutY="385.0" mnemonicParsing="false" onAction="#runOneStepButtonPressed" prefHeight="25.0" prefWidth="153.0" text="Run One Step" />
+      <Label alignment="TOP_CENTER" layoutX="15.0" layoutY="14.0" prefHeight="17.0" prefWidth="153.0" text="Heap Table" textAlignment="CENTER" />
+      <Label layoutX="258.0" layoutY="14.0" />
+      <Label alignment="TOP_CENTER" layoutX="168.0" layoutY="14.0" prefHeight="17.0" prefWidth="153.0" text="Symbol Table" textAlignment="CENTER" />
+      <Label alignment="TOP_CENTER" layoutX="320.0" layoutY="14.0" prefHeight="17.0" prefWidth="137.0" text="File Table" textAlignment="CENTER" />
+      <Label alignment="TOP_CENTER" layoutX="75.0" layoutY="199.0" prefHeight="17.0" prefWidth="153.0" text="Execution Stack" textAlignment="CENTER" />
+      <Label alignment="TOP_CENTER" layoutX="290.0" layoutY="199.0" prefHeight="17.0" prefWidth="80.0" text="Program ID" textAlignment="CENTER" />
+      <Label alignment="TOP_CENTER" layoutX="370.0" layoutY="199.0" prefHeight="17.0" prefWidth="73.0" text="Output" textAlignment="CENTER" />
+   </children>
+</AnchorPane>

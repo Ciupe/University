@@ -1,0 +1,366 @@
+
+/*
+.header {
+    padding: 1px 16px;
+    background: black;
+    color: #f1f1f1;
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.sticky + .content {
+    padding-top: 102px;
+}
+*/
+
+/* Style the navbar */
+html{
+    width: 100%;
+    margin: 0;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-display: row;
+    align-items: center;
+    height: 5%;
+    position: fixed;
+    top: 0;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+}
+
+.cnn_logo{
+    width: 2.3%;
+    height: 100%;
+    margin-left: 265px;
+}
+
+/* Navbar links */
+#navbar a {
+    top: 0;
+    float: left;
+    display: flex;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    margin: 0;
+}
+
+/* Page content */
+.content {
+    padding: 16px;
+}
+
+.menu_items {
+    color: #E6E6E6;
+    margin: auto;
+    width: 100%;
+    position: relative;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 50px;
+    font-size: 16px;
+    padding-left: 14px;
+    display: flex;
+    flex-direction: row;
+}
+
+.item {
+    padding-left: 15px;
+    font-family: "Helvetica Neue", Helvetica, Arial, Utkal, sans-serif;
+    webkit-font-smoothing: antialiased;
+}
+
+.item2{
+    padding-left: 455px;
+    font-family: "Helvetica Neue", Helvetica, Arial, Utkal, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: inherit;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.svg_items{
+    color: white;
+    width: 2.2%;
+    height: 2.2%;
+    padding-right: 388px;
+}
+
+.svg_items2{
+    color: white;
+    width: 2.2%;
+    height: 2.2%;
+    padding-right: 300px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.section1{
+    padding-top: 70px;
+    padding-bottom: 20px;
+    margin-left: 323px;
+}
+
+.covid_text{
+    color: #e30000;
+    font-family: CNN,Helvetica Neue,Helvetica,Arial,Utkal,sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.section1_text{
+    font-family: CNN,Helvetica Neue,Helvetica,Arial,Utkal,sans-serif;
+    text-shadow: 0.35px 0.35px BLACK;
+}
+
+.section1_slash{
+    color: #d9d9d9;
+    padding: 8px;
+    font-size: 15px;
+    font-weight: 1000;
+}
+
+.big_div{
+    padding: 15px;
+    margin-left: 330px;
+    flex-direction: column;
+}
+
+.section2{
+    flex-direction: row;
+}
+
+.div_column1{
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.div_column2{
+    float: right;
+    width: 50%;
+    padding: 10px;
+}
+
+.section2{
+
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.header1{
+    font-family: CNN,Helvetica Neue,Verdana,Helvetica,Arial,Utkal,sans-serif;
+    margin: 0 0 10px;
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 0.5px 0.5px BLACK;
+}
+
+.image1{
+    width: 98%;
+    height: 42%;
+}
+
+.image2{
+    width: 135%;
+    height: 29%;
+}
+
+.image3{
+    width: 100%;
+    height: 29%;
+}
+
+.image4{
+    width: 135%;
+    height: 25%;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+.image5{
+    margin-bottom: 7px;
+    width: 100%;
+    height: 50%;
+}
+
+
+.flex-container {
+    padding: 0;
+    margin-left: 345px;
+    margin-right: 355px;
+    list-style: none;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.nowrap  {
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+.div1{
+    margin-right: 10px;
+    width: 43%;
+}
+
+.div2{
+    margin-right: 100px;
+    width: 20%;
+}
+
+.div3{
+    margin-left: 0px;
+    width: 30%;
+}
+
+.div4{
+    width: 52%;
+    margin-right: 22px;
+}
+
+.div5{
+    width: 43%;
+    margin-right: 10px;
+}
+
+.div6{
+    width: 43%;
+    margin-right: 10px;
+}
+
+.span1{
+    font-family: CNN,Helvetica Neue,Helvetica,Arial,Utkal,sans-serif;
+    font-size: 1.06667rem;
+    font-weight: 700;
+}
+
+.span2{
+    font-family: CNN,Helvetica Neue,Helvetica,Arial,Utkal,sans-serif;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1rem;
+    line-height: 1.33333;
+}
+
+.spanLive{
+    font-family: CNN,Helvetica Neue,Helvetica,Arial,Utkal,sans-serif;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1rem;
+    line-height: 1.33333;
+    color: red;
+}
+
+.span3{
+    font-family: CNN,Helvetica Neue,Helvetica,Arial,Utkal,sans-serif;
+    font-size: 1.33333rem;
+    font-weight: 650;
+}
+
+.spanAnalysis{
+    font-family: CNN,Helvetica Neue,Helvetica,Arial,Utkal,sans-serif;
+    font-size: 0.92rem;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.span4{
+    font-family: CNN,Helvetica Neue,Helvetica,Arial,Utkal,sans-serif;
+    font-size: .93333rem;
+    line-height: 1.28571;
+    color: #0c0c0c;
+}
+
+.divMargin{
+    margin-top: 5px;
+    text-decoration: underline;
+}
+
+.span5{
+    font-family: CNN,Helvetica Neue,Helvetica,Arial,Utkal,sans-serif;
+    font-size: 0.92rem;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+
+.ul{
+    margin: 0;
+    padding-left: 15px;
+}
+
+.h21{
+    color: #404040;
+    background-color: #f2f2f2;
+    padding: 7px;
+    position: relative;
+    font-family: CNN,Helvetica Neue,Helvetica,Arial,Utkal,sans-serif;
+    font-weight: 700;
+    font-size: 1.1em;
+    line-height: 1.375;
+}
+
+.h22{
+    color: #404040;
+    background-color: #f2f2f2;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    font-family: CNN,Helvetica Neue,Helvetica,Arial,Utkal,sans-serif;
+    font-weight: 700;
+    font-size: 1.1em;
+    line-height: 1.375;
+}
+
+.flex-container2 {
+    padding: 0;
+    margin-left: 345px;
+    margin-right: 355px;
+    list-style: none;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    margin-top: 50px;
+}

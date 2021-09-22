@@ -1,0 +1,66 @@
+- Name: Register
+
+- Description: Registers a new/unregistered user with provided data and adds it to the database.
+
+- Actor: Unregistered User
+
+- Errors: Credentials already exist.
+
+- Pre-Conditions: 
+    > The user must not already have an account.
+
+- Post-Conditions: 
+    > The user has to pay a tax and add personal information.
+    > User's account has been created with provided information.
+
+-------------------------------------------------------------------------------------------------------------
+
+- Name: Login
+
+- Description: Logins the user to their account.
+
+- Actor: Registered User 
+
+- Errors: Credentials do not match any registered user.
+
+- Pre-Conditions: 
+    > The user is registered in the system.
+
+- Post-Conditions: 
+    > User has been logged in.
+
+-------------------------------------------------------------------------------------------------------------
+
+- Name: Invite PC Member
+
+- Description: Invites PC Members to take part in the conference.
+
+- Actor: PC Inviter
+
+-Error: PC Member invited is not available/existent or it has already been invited.
+
+- Pre-Conditions: 
+    > PC Member invited must be existent.
+
+- Post-Conditions: 
+    > The PC Inviter sent invites to all selected PC Members
+
+-------------------------------------------------------------------------------------------------------------
+
+- Name: Create Conference
+
+- Description: Creates a conference which the others will attend.
+
+- Actor: Admin
+
+-Error: Conference already exists.
+
+- Pre-Conditions: 
+    > The conference must be an inexistent one
+
+- Post-Conditions: 
+    > Conference is created and available to proceed with it.
+
+
+
+

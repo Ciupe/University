@@ -1,0 +1,19 @@
+
+-- issue
+
+SET TRANSACTION ISOLATION LEVEL READ COMMITTED
+BEGIN TRAN
+	select * from Players
+	WAITFOR DELAY '00:00:05'
+	select * from Players
+COMMIT TRAN
+
+
+-- solution
+
+SET TRANSACTION ISOLATION LEVEL REPEATABLE READ
+BEGIN TRAN
+	select * from Players
+	WAITFOR DELAY '00:00:05'
+	select * from Players
+COMMIT TRAN

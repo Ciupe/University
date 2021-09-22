@@ -1,0 +1,21 @@
+Execution Stack: v = true; Print (v) int v 
+SymbolTable:
+
+Output:
+
+
+
+Execution Stack: v = true; Print (v) 
+SymbolTable:
+v --> 0
+Output:
+
+
+
+Execution Stack: Print (v) v = true 
+SymbolTable:
+v --> 0
+Output:
+
+
+

@@ -1,0 +1,68 @@
+Execution Stack: a = 25; int b; b = 14; If (a >= b) then {Print (true)} else {Print (false)} int a 
+SymbolTable:
+
+Output:
+
+
+
+Execution Stack: a = 25; int b; b = 14; If (a >= b) then {Print (true)} else {Print (false)} 
+SymbolTable:
+a --> 0
+Output:
+
+
+
+Execution Stack: int b; b = 14; If (a >= b) then {Print (true)} else {Print (false)} a = 25 
+SymbolTable:
+a --> 0
+Output:
+
+
+
+Execution Stack: int b; b = 14; If (a >= b) then {Print (true)} else {Print (false)} 
+SymbolTable:
+a --> 25
+Output:
+
+
+
+Execution Stack: b = 14; If (a >= b) then {Print (true)} else {Print (false)} int b 
+SymbolTable:
+a --> 25
+Output:
+
+
+
+Execution Stack: b = 14; If (a >= b) then {Print (true)} else {Print (false)} 
+SymbolTable:
+a --> 25
+b --> 0
+Output:
+
+
+
+Execution Stack: If (a >= b) then {Print (true)} else {Print (false)} b = 14 
+SymbolTable:
+a --> 25
+b --> 0
+Output:
+
+
+
+Execution Stack: If (a >= b) then {Print (true)} else {Print (false)} 
+SymbolTable:
+a --> 25
+b --> 14
+Output:
+
+
+
+Execution Stack: 
+SymbolTable:
+a --> 25
+b --> 14
+Output:
+true
+
+
+

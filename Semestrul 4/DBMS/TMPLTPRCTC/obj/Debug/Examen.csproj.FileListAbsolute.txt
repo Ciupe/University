@@ -1,0 +1,10 @@
+C:\Facultate\Semestrul 4\DBMS\TMPLTPRCTC\obj\Debug\Examen.csprojAssemblyReference.cache
+C:\Facultate\Semestrul 4\DBMS\TMPLTPRCTC\obj\Debug\Examen.Form1.resources
+C:\Facultate\Semestrul 4\DBMS\TMPLTPRCTC\obj\Debug\Assignment1.Properties.Resources.resources
+C:\Facultate\Semestrul 4\DBMS\TMPLTPRCTC\obj\Debug\Examen.csproj.GenerateResource.cache
+C:\Facultate\Semestrul 4\DBMS\TMPLTPRCTC\obj\Debug\Examen.csproj.CoreCompileInputs.cache
+C:\Facultate\Semestrul 4\DBMS\TMPLTPRCTC\obj\Debug\Assignment1.exe
+C:\Facultate\Semestrul 4\DBMS\TMPLTPRCTC\obj\Debug\Assignment1.pdb
+C:\Facultate\Semestrul 4\DBMS\TMPLTPRCTC\bin\Debug\Assignment1.exe.config
+C:\Facultate\Semestrul 4\DBMS\TMPLTPRCTC\bin\Debug\Assignment1.exe
+C:\Facultate\Semestrul 4\DBMS\TMPLTPRCTC\bin\Debug\Assignment1.pdb

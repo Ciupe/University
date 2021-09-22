@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Items</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="./">HOME</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./display.html">Display</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./add.html">Add</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="the-list">
+            <div class="row">
+                <div class="col-md-7 right-side" style="margin-left: 50px">
+                    <table class="table table-striped table-dark">
+                        <thead>
+                        <th>Id</th>
+                        <th>Column1</th>
+                        <th>Column2</th>
+                        <th>Column3</th>
+                        <th>Column4</th>
+                        <th>Delete</th>
+                        <th>Update</th>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        $(document).ready(function() {
+            console.log("LOADED");
+            $.ajax({
+                url: "http://localhost/php_template/getItems.php",
+                type: "GET",
+                dataType: "json",
+                success: function(response) {
+                    let table_body = $("tbody");
+                    console.log(response["items"]);
+                    items = response["items"];
+                    for (let i = 0; i < items.length; i++) {
+                        let item = items[i];
+                        let row = "<tr>"
+                        Object.keys(item).forEach(function (attr) {
+                            row += "<td>" + item[attr] + "</td>";
+                        });
+                        row += `<td><a style = \"color: white\" onclick = \"deleteItem(${item["id"]})\">delete</a></td>`;
+                        row += "<td><a style = \"color: white\" href = \"http://localhost/php_template/update.html?id=" + item["id"] + "\">update</a></td>";
+                        row += "</tr>";
+                        table_body.append(row);
+                    }
+                }
+            })
+        });
+
+        function deleteItem(id) {
+            console.log(id);
+            $.ajax({
+                url: "http://localhost/php_template/delete.php?id=" + id,
+                method: "DELETE",
+                success: function(response) {
+                    location.reload();
+                }
+            });
+        }
+    </script>
+</html>
