@@ -1,0 +1,2 @@
+C:\Users\ciupe\source\repos\DSA Lab 5\Debug\DSA Lab 5.exe
+C:\Users\ciupe\source\repos\DSA Lab 5\Debug\DSA Lab 5.pdb

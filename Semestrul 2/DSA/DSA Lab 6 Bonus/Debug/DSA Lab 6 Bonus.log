@@ -1,0 +1,46 @@
+﻿  App.cpp
+  ExtendedTest.cpp
+C:\Users\ciupe\source\repos\DSA Lab 6 Bonus\ExtendedTest.cpp(50,16): error C2664: 'SortedSet::SortedSet(const SortedSet &)': cannot convert argument 1 from 'Relation' to 'const SortedSet &'
+C:\Users\ciupe\source\repos\DSA Lab 6 Bonus\ExtendedTest.cpp(50,16): message : Reason: cannot convert from 'Relation' to 'const SortedSet'
+C:\Users\ciupe\source\repos\DSA Lab 6 Bonus\ExtendedTest.cpp(50,16): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\ciupe\source\repos\DSA Lab 6 Bonus\SortedSet.h(77,1): message : see declaration of 'SortedSet::SortedSet'
+C:\Users\ciupe\source\repos\DSA Lab 6 Bonus\ExtendedTest.cpp(85,24): error C2664: 'SortedSet::SortedSet(const SortedSet &)': cannot convert argument 1 from 'bool (__cdecl *)(TComp,TComp)' to 'const SortedSet &'
+C:\Users\ciupe\source\repos\DSA Lab 6 Bonus\ExtendedTest.cpp(85,24): message : Reason: cannot convert from 'overloaded-function' to 'const SortedSet'
+C:\Users\ciupe\source\repos\DSA Lab 6 Bonus\ExtendedTest.cpp(85,24): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\ciupe\source\repos\DSA Lab 6 Bonus\SortedSet.h(77,1): message : see declaration of 'SortedSet::SortedSet'
+C:\Users\ciupe\source\repos\DSA Lab 6 Bonus\ExtendedTest.cpp(102,25): error C2664: 'SortedSet::SortedSet(const SortedSet &)': cannot convert argument 1 from 'bool (__cdecl *)(TComp,TComp)' to 'const SortedSet &'
+C:\Users\ciupe\source\repos\DSA Lab 6 Bonus\ExtendedTest.cpp(102,25): message : Reason: cannot convert from 'overloaded-function' to 'const SortedSet'
+C:\Users\ciupe\source\repos\DSA Lab 6 Bonus\ExtendedTest.cpp(102,25): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\ciupe\source\repos\DSA Lab 6 Bonus\SortedSet.h(77,1): message : see declaration of 'SortedSet::SortedSet'
+C:\Users\ciupe\source\repos\DSA Lab 6 Bonus\ExtendedTest.cpp(154,16): error C2664: 'SortedSet::SortedSet(const SortedSet &)': cannot convert argument 1 from 'Relation' to 'const SortedSet &'
+C:\Users\ciupe\source\repos\DSA Lab 6 Bonus\ExtendedTest.cpp(154,16): message : Reason: cannot convert from 'Relation' to 'const SortedSet'
+C:\Users\ciupe\source\repos\DSA Lab 6 Bonus\ExtendedTest.cpp(154,16): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\ciupe\source\repos\DSA Lab 6 Bonus\SortedSet.h(77,1): message : see declaration of 'SortedSet::SortedSet'
+C:\Users\ciupe\source\repos\DSA Lab 6 Bonus\ExtendedTest.cpp(218,16): error C2664: 'SortedSet::SortedSet(const SortedSet &)': cannot convert argument 1 from 'Relation' to 'const SortedSet &'
+C:\Users\ciupe\source\repos\DSA Lab 6 Bonus\ExtendedTest.cpp(218,16): message : Reason: cannot convert from 'Relation' to 'const SortedSet'
+C:\Users\ciupe\source\repos\DSA Lab 6 Bonus\ExtendedTest.cpp(218,16): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\ciupe\source\repos\DSA Lab 6 Bonus\SortedSet.h(77,1): message : see declaration of 'SortedSet::SortedSet'
+C:\Users\ciupe\source\repos\DSA Lab 6 Bonus\ExtendedTest.cpp(251,17): error C2664: 'SortedSet::SortedSet(const SortedSet &)': cannot convert argument 1 from 'Relation' to 'const SortedSet &'
+C:\Users\ciupe\source\repos\DSA Lab 6 Bonus\ExtendedTest.cpp(251,17): message : Reason: cannot convert from 'Relation' to 'const SortedSet'
+C:\Users\ciupe\source\repos\DSA Lab 6 Bonus\ExtendedTest.cpp(251,17): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\ciupe\source\repos\DSA Lab 6 Bonus\SortedSet.h(77,1): message : see declaration of 'SortedSet::SortedSet'
+C:\Users\ciupe\source\repos\DSA Lab 6 Bonus\ExtendedTest.cpp(267,17): error C2664: 'SortedSet::SortedSet(const SortedSet &)': cannot convert argument 1 from 'Relation' to 'const SortedSet &'
+C:\Users\ciupe\source\repos\DSA Lab 6 Bonus\ExtendedTest.cpp(267,17): message : Reason: cannot convert from 'Relation' to 'const SortedSet'
+C:\Users\ciupe\source\repos\DSA Lab 6 Bonus\ExtendedTest.cpp(267,17): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\ciupe\source\repos\DSA Lab 6 Bonus\SortedSet.h(77,1): message : see declaration of 'SortedSet::SortedSet'
+C:\Users\ciupe\source\repos\DSA Lab 6 Bonus\ExtendedTest.cpp(288,16): error C2664: 'SortedSet::SortedSet(const SortedSet &)': cannot convert argument 1 from 'Relation' to 'const SortedSet &'
+C:\Users\ciupe\source\repos\DSA Lab 6 Bonus\ExtendedTest.cpp(288,16): message : Reason: cannot convert from 'Relation' to 'const SortedSet'
+C:\Users\ciupe\source\repos\DSA Lab 6 Bonus\ExtendedTest.cpp(288,16): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\ciupe\source\repos\DSA Lab 6 Bonus\SortedSet.h(77,1): message : see declaration of 'SortedSet::SortedSet'
+  ShortTest.cpp
+C:\Users\ciupe\source\repos\DSA Lab 6 Bonus\ShortTest.cpp(21,18): error C2664: 'SortedSet::SortedSet(const SortedSet &)': cannot convert argument 1 from 'bool (__cdecl *)(TComp,TComp)' to 'const SortedSet &'
+C:\Users\ciupe\source\repos\DSA Lab 6 Bonus\ShortTest.cpp(21,18): message : Reason: cannot convert from 'overloaded-function' to 'const SortedSet'
+C:\Users\ciupe\source\repos\DSA Lab 6 Bonus\ShortTest.cpp(21,18): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\ciupe\source\repos\DSA Lab 6 Bonus\SortedSet.h(77,1): message : see declaration of 'SortedSet::SortedSet'
+C:\Users\ciupe\source\repos\DSA Lab 6 Bonus\ShortTest.cpp(40,17): error C2664: 'SortedSet::SortedSet(const SortedSet &)': cannot convert argument 1 from 'bool (__cdecl *)(TComp,TComp)' to 'const SortedSet &'
+C:\Users\ciupe\source\repos\DSA Lab 6 Bonus\ShortTest.cpp(40,17): message : Reason: cannot convert from 'overloaded-function' to 'const SortedSet'
+C:\Users\ciupe\source\repos\DSA Lab 6 Bonus\ShortTest.cpp(40,17): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\ciupe\source\repos\DSA Lab 6 Bonus\SortedSet.h(77,1): message : see declaration of 'SortedSet::SortedSet'
+  SortedSet.cpp
+  SortedSetIterator.cpp
+  Generating Code...
