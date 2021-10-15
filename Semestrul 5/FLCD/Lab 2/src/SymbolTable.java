@@ -1,63 +1,56 @@
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class SymbolTable {
 
-    private int capacity = 100;
-    private int size;
-
-    private ArrayList<String> tokenArray;
+    private Map<Integer, List<String>> hashTable;
 
     public SymbolTable(){
-        this.size = 0;
-        tokenArray = new ArrayList<String>(capacity);
+        hashTable = new HashMap<>();
     }
 
-    public void add (Token newToken){
-        if (size >= capacity)
-            rehashTable();
+    public void add (String newToken){
+        int hashIndex = hash(newToken);
 
-        int hashPosition = hash(newToken);
+        if (hashTable.get(hashIndex) == null)
+            hashTable.put(hashIndex, new ArrayList<>());
 
-        if (tokenArray.get(hashPosition) != null){
-            tokenArray.add(hashPosition, newToken.getValue());
-        }
-        else
-        {
-            while (tokenArray.get(hashPosition) != null){
-                ++hashPosition;
-                if (hashPosition >= capacity)
-                    hashPosition = 0;
-            }
-        }
+        hashTable.get(hashIndex).add(newToken);
 
-        size++;
     }
 
-    public int findIndex (String value){
-        int index = 0;
-        while (index < capacity){
-            if (tokenArray.get(index) == value)
-                return index;
-            ++index;
+    public int findIndexInArray (String value){
+        int hashIndex = hash(value);
+        var array = hashTable.get(hashIndex);
+
+        int arrayIndex = 0;
+        while (arrayIndex < array.size()){
+            if (array.get(arrayIndex) == value)
+                return arrayIndex;
+            ++arrayIndex;
         }
+
         return -1;
     }
 
     public Boolean contains (String value){
-        int index = 0;
-        while (index < capacity){
-            if (tokenArray.get(index) == value)
+        int hashIndex = hash(value);
+        var array = hashTable.get(hashIndex);
+
+        int arrayIndex = 0;
+        while (arrayIndex < array.size()){
+            if (array.get(arrayIndex) == value)
                 return true;
-            ++index;
+            ++arrayIndex;
         }
+
         return false;
     }
 
-    public void rehashTable(){
-        return;
-    }
-
-    public int hash (Token token){
-        return token.getKey() % capacity;
+    public int hash (String token){
+        return token.chars().sum();
     }
 }
+
