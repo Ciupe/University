@@ -18,21 +18,20 @@ public class SymbolTable {
             hashTable.put(hashIndex, new ArrayList<>());
 
         hashTable.get(hashIndex).add(newToken);
-
     }
 
-    public int findIndexInArray (String value){
+    public Pair findIndexInArray (String value){
         int hashIndex = hash(value);
         var array = hashTable.get(hashIndex);
 
         int arrayIndex = 0;
         while (arrayIndex < array.size()){
             if (array.get(arrayIndex) == value)
-                return arrayIndex;
+                return new Pair(hashIndex, arrayIndex);
             ++arrayIndex;
         }
 
-        return -1;
+        return null;
     }
 
     public Boolean contains (String value){
