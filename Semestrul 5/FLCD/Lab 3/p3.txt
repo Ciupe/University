@@ -1,0 +1,14 @@
+DECLARATION
+  a, n, s, i: INTEGER;
+END_DECLARATION
+
+PROGRAM
+    read(n);
+    s = 0;
+    for i = 1 to n do
+    {
+        read(a);
+        s = s + a;
+    }
+    write(s);
+END_PROGRAM

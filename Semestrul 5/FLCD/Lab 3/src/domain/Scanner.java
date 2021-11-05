@@ -13,6 +13,7 @@ public class Scanner {
     SymbolTable symbolTable;
     ArrayList<String> tokens;
     ArrayList<Pair<String, Integer>> pif;
+    private Boolean correct = true;
 
     public Scanner(SymbolTable symbolTable, String tokenFile) {
         this.symbolTable = symbolTable;
@@ -38,7 +39,10 @@ public class Scanner {
         BufferedReader reader = new BufferedReader(new FileReader(fileScanned));
 
         String currentLine;
+        int lineNumber = 0;
+
         while ((currentLine = reader.readLine()) != null){
+            lineNumber++;
             if (isReservedWord(currentLine.strip()))
                 pif.add(new Pair(currentLine.strip(), -1));
             else{
@@ -47,27 +51,48 @@ public class Scanner {
                 String newToken;
 
                 for (int currentIndex = 0; currentIndex < currentLine.length(); ++currentIndex){
-                    if (isSeparator(currentLine.charAt(currentIndex))){
-                        newToken = currentLine.substring(lastPifIndex, currentIndex);
+                    if (isSeparator(currentLine.charAt(currentIndex)) ||
+                            (currentLine.charAt(currentIndex) == ' ' && !currentLine.substring(lastPifIndex, currentIndex).trim().contains("\"")))
+                    {
 
-                        if (isSeparator(newToken) || isReservedWord(newToken) || isOperator(newToken)){
-                            pif.add(new Pair(newToken, -1));
+                        newToken = currentLine.substring(lastPifIndex, currentIndex).trim();
+
+                        if (newToken.length() != 0) {
+
+                            if (isSeparator(newToken) || isReservedWord(newToken) || isOperator(newToken)) {
+                                pif.add(new Pair(newToken, -1));
+                            } else if (isConstant(newToken)) {
+                                symbolTable.add(newToken);
+
+                                pif.add(new Pair("constant", symbolTable.findIndexInArray(newToken)));
+
+                            } else if (isIdentifier(newToken)) {
+                                symbolTable.add(newToken);
+
+                                pif.add(new Pair("id", symbolTable.findIndexInArray(newToken)));
+
+                            }else {
+                                System.out.println("Lexical error! Unidentified token on line: " + lineNumber + ": " + newToken);
+                                correct = false;
+                            }
                         }
 
-                        else if (isIdentifier(newToken)){
-                            symbolTable.add(newToken);
-                            pif.add(new Pair("id", symbolTable.findIndexInArray(newToken)));
-                        }
-                        
-
+                        if (currentLine.charAt(currentIndex) != ' ')
+                            pif.add(new Pair(currentLine.charAt(currentIndex), -1));
 
                         lastPifIndex = currentIndex + 1; // now should throw an error if lastPifIndex == currentIndex (2 separators in a row)
                         currentIndex++;
+
                     }
                 }
             }
         }
 
+        writePif();
+        writeSymbolTable();
+
+        if (correct)
+            System.out.println("Lexically correct!");
     }
 
     private void writePif() throws IOException {
@@ -80,13 +105,13 @@ public class Scanner {
         outputfile.close();
     }
 
-    private void writeST() throws IOException {
-        FileWriter outputfile = new FileWriter("SymbolTable.out");
+    private void writeSymbolTable() throws IOException {
+        FileWriter outputfile = new FileWriter("ST.out");
 
-        for (int i = 0; i < symbolTable.size(); ++i){
+        for (int i = 0; i <= symbolTable.size(); ++i){
             if (symbolTable.getValue(i) != null)
                 for (int j = 0; j < symbolTable.getValue(i).size(); ++j)
-                    outputfile.write(symbolTable.getValue(i).get(j));
+                    outputfile.write(symbolTable.getValue(i).get(j) + "\n");
         }
 
         outputfile.close();
@@ -98,8 +123,10 @@ public class Scanner {
     }
 
     private boolean isConstant(String checkedString){
-        String regex = "\"([^\"]*)\"";
-        return checkedString.matches(regex);
+        String stringRegex = "\"([^\"]*)\"";
+        String numberRegex = "^[-]?[0-9]+";
+        return checkedString.matches(stringRegex) || checkedString.matches(numberRegex) || checkedString.equals("true")
+            || checkedString.equals("false");
     }
 
     private List<String> operators() {
@@ -118,8 +145,11 @@ public class Scanner {
     }
 
     private boolean isSeparator(char token) {
-        String[] separators = {"(", ")", "[", "]", "{", "}", ":", ",", ";", " ", "\t", "\n"};
-        return Arrays.asList(separators).contains(token);
+        char[] separators = {'(', ')', '[', ']', '{', '}', ':', ',', ';', '\t', '\n'};
+        for (int i = 0; i < separators.length; ++i)
+            if (separators[i] == token)
+                return true;
+        return false;
     }
 
     private boolean isSeparator(String token) {
@@ -129,13 +159,13 @@ public class Scanner {
 
     private List<String> reservedWords(){
         String[] words = {"PROGRAM", "END_PROGRAM", "DECLARATION", "END_DECLARATION", "integer", "float", "char", "string",
-                "array", "write", "read", "and", "or", "for", "do", "if", "while", "then" };
+                "bool", "array", "write", "read", "and", "or", "for", "do", "if", "while", "then", "else" };
         return Arrays.asList(words);
     }
 
     private boolean isReservedWord(String token) {
         String[] words = {"PROGRAM", "END_PROGRAM", "DECLARATION", "END_DECLARATION", "integer", "float", "char", "string",
-                "array", "write", "read", "and", "or", "for", "do", "if", "while", "then" };
+                "bool", "array", "write", "read", "and", "or", "for", "do", "if", "while", "then", "else" };
         return Arrays.asList(words).contains(token);
     }
 

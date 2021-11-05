@@ -1,0 +1,17 @@
+DECLARATION
+a,b:integer;
+END_DECLARATION
+
+PROGRAM
+read(a);
+read(b);
+a = "string";
+b = 23;
+while a != b do
+{
+    if a < b then b = b - a;
+    if a > b then a = a - b;
+}
+write(a);
+END_PROGRAM
+

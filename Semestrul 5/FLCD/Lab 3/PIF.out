@@ -1,0 +1,98 @@
+DECLARATION -1
+id 680 0
+, -1
+id 98 0
+, -1
+id 99 0
+: -1
+integer -1
+; -1
+id 101 0
+: -1
+bool -1
+; -1
+id 102 0
+: -1
+array -1
+; -1
+END_DECLARATION -1
+PROGRAM -1
+read -1
+( -1
+id 97 0
+) -1
+read -1
+( -1
+id 98 0
+) -1
+read -1
+( -1
+id 99 0
+) -1
+id 97 0
+= -1
+constant 146 0
+; -1
+id 98 0
+= -1
+constant 797 0
+; -1
+id 99 0
+= -1
+constant 156 0
+; -1
+id 101 0
+= -1
+constant 448 0
+; -1
+id 100 0
+= -1
+constant 1275 0
+; -1
+id 102 0
+= -1
+[ -1
+constant 49 0
+, -1
+constant 50 0
+, -1
+constant 51 0
+, -1
+constant 731 0
+] -1
+if -1
+id 97 0
+>= -1
+id 98 0
+{ -1
+if -1
+id 97 0
+>= -1
+id 99 0
+then -1
+write -1
+( -1
+id 97 0
+) -1
+else -1
+write -1
+( -1
+id 99 0
+) -1
+} -1
+else -1
+if -1
+id 98 0
+>= -1
+id 99 0
+then -1
+write -1
+( -1
+id 98 0
+) -1
+else -1
+write -1
+( -1
+id 99 0
+) -1
+END_PROGRAM -1

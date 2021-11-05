@@ -21,7 +21,8 @@ public class SymbolTable {
         if (hashTable.get(hashIndex) == null)
             hashTable.put(hashIndex, new ArrayList<>());
 
-        hashTable.get(hashIndex).add(newToken);
+        if (!contains(newToken))
+            hashTable.get(hashIndex).add(newToken);
     }
 
     public Pair findIndexInArray (String value){
@@ -30,7 +31,7 @@ public class SymbolTable {
 
         int arrayIndex = 0;
         while (arrayIndex < array.size()){
-            if (array.get(arrayIndex) == value)
+            if (array.get(arrayIndex).equals(value))
                 return new Pair(hashIndex, arrayIndex);
             ++arrayIndex;
         }
@@ -40,15 +41,18 @@ public class SymbolTable {
 
     public Boolean contains (String value){
         int hashIndex = hash(value);
+
+        if (hashTable.get(hashIndex) == null)
+            hashTable.put(hashIndex, new ArrayList<>());
+
         var array = hashTable.get(hashIndex);
 
         int arrayIndex = 0;
         while (arrayIndex < array.size()){
-            if (array.get(arrayIndex) == value)
+            if (array.get(arrayIndex).equals(value))
                 return true;
             ++arrayIndex;
         }
-
         return false;
     }
 

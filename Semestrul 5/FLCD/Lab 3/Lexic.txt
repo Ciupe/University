@@ -1,0 +1,25 @@
+digit ::= "0" | "1" | ... | "9"
+non_zero_digit ::= "1" | "2" | ... | "9"
+
+letter ::= "a" | "b" | ... | "z" | "A" | "B" | ... | "Z"
+
+char ::= digit | letter | " " | a
+string ::= char {string}
+const_string ::= "string" | ""
+
+number ::= digit | non_zero_digit{digit}{number}
+integer ::= number | "-"number
+const_integer ::= "0" | number
+
+bool ::= "true" | "false"
+const_bool ::= "true"
+
+- operators: "+", "-", "*", "/", "%", "==", "=", ">=", ">", "<=", "<", "!="
+
+- separators: "(", ")", "[", "]", "{", "}", ":", ",", ";", " ", "\t", "\n"
+
+- reserved words: "PROGRAM", "END_PROGRAM", "DECLARATION", "END_DECLARATION", "integer", "float", "char", "string",
+                "array", "write", "read", "and", "or", "for", "do", "if", "while", "then", "else"
+
+identifier ::= letter | letter {identifier} | _letter {identifier}
+

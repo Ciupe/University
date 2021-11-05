@@ -1,0 +1,37 @@
+program ::= "DECLARATION" declaration_list "END_DECLARATION" "PROGRAM" statement_list "END_PROGRAM"
+
+declaration_list ::= declaration | declaration{declaration_list}
+
+declaration ::= identifier{,identifier}":"type
+
+array_declaration ::= identifier": array"
+
+type ::= "bool" | "integer" | "string"
+
+compund_statement ::= "{" statement_list "}"
+
+statement_list ::= statement | statement ";" statement_list
+
+statement ::= simple_statement | stuctured_statement
+
+simple_statement ::= assignment_statement | io_statement
+
+assign_statement ::= identifier"="expression
+
+expression ::= expression arithmetic_operators term | term
+
+term ::= term "*" factor | factor
+
+factor ::= "(" expression ")" | IDENTIFIER
+
+io_statement ::= "read" "(" IDENTIFIER ")" | "write" "(" IDENTIFIER ")"
+
+structured_statement ::= compound_statement | if_statement | while_statement
+
+if_statement ::= "if" condition "then" statement {"else" statement}
+
+while_statement ::= "while" condition "do" statement
+
+condition ::= expression RELATION expression
+
+relation ::= "<" | "<=" | "=" | "==" | "!=" | ">=" | ">"
